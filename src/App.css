@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: 	#f36f60;
 }
 
 .App-logo {
@@ -35,4 +36,101 @@
   to {
     transform: rotate(360deg);
   }
+}
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #47ccde ;
+  border-color: #47ccde ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #47ccde ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #47ccde ;
+  border-color: #47ccde;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #47ccde
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+.all-post {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background-color: #f02f1a;
+  margin: auto;
+  color: whitesmoke;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.all-post:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+p{
+  font-size: 18px;
+  font-style: italic;
+}
+.link{
+  text-decoration: none;
+}
+.post {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background-color: #f02f1a;
+  margin: auto;
+  color: whitesmoke;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.post:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+p{
+  font-size: 18px;
+  font-style: italic;
+}
+.post-background{
+  height: 710px;
+  padding-top: 50px;
+}
+
+button{
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #f02f1a;
+}
+button:hover{
+  background-color: #f02f1a;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+.load{
+  height: 710px;
 }
