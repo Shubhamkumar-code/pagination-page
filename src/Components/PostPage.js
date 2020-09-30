@@ -103,8 +103,12 @@ handlePageClick = (e) => {
                       <p>{data.body}</p>
                   </div>
             </Link>)
-
+      
+      if(this.state.isLoaded === false)
+      return <div className="load"><h1>Loading</h1></div>
+      else
       return(
+
         <div className="App">
             <input type="text" placeholder="search"
                    onChange={(e) => this.searchSapce(e)} /><hr/>
